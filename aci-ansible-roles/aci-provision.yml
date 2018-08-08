@@ -1,0 +1,10 @@
+---
+
+- name: Create a Tenant using a role
+  hosts: dcloud-fabric
+  roles:
+    - CreateTN
+    - CreateVRF
+    - CreateBD
+    - CreateANP
+    - CreateEPG

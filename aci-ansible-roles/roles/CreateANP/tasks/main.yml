@@ -1,0 +1,10 @@
+---
+
+- name: Create Application Profile
+  aci_ap:
+    host: "{{ apic }}"
+    password: "{{ pw }}"
+    validate_certs: no
+    tenant: "{{ TN }}"
+    ap: "{{ AP }}_app"
+    state: present

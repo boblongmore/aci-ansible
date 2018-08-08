@@ -1,0 +1,7 @@
+---
+
+TN: ansible-tenant-bob
+EPG: ansible-web
+VRF: ansible-bob
+BD: ansible-web-bd
+AP: ansible-web

@@ -1,0 +1,10 @@
+---
+
+- name: Create VRF
+  aci_vrf:
+    host: "{{ apic }}"
+    password: "{{ pw }}"
+    validate_certs: no
+    vrf: "{{ VRF }}"
+    tenant: "{{ TN }}"
+    state: present
