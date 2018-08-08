@@ -2,3 +2,10 @@
 ansible_connection=local
 
 [lab-fabric]
+
+[dcloud-fabric:vars]
+ansible_connection=local
+apic=sandboxapicdc.cisco.com
+
+[dcloud-fabric]
+sandboxapicdc.cisco.com

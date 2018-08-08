@@ -1,3 +1,11 @@
 ---
 
-- name: Create Bridge Domain
+- name: Add Bridge Domain
+  aci_bd:
+    host: "{{ apic }}"
+    password: "{{ pw }}"
+    validate_certs: no
+    state: present
+    tenant: "{{ TN }}"
+    bd: "{{ BD }}"
+    vrf: "{{ VRF }}"
