@@ -1,1 +1,4 @@
+[lab-fabric:vars]
+ansible_connection=local
+
 [lab-fabric]

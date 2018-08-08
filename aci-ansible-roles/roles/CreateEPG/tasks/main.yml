@@ -1,0 +1,14 @@
+---
+
+- name: Create an EPG
+  aci_epg:
+        hostname: "{{ inventory_hostname }}"
+        username: "{{ username }}"
+        password: "{{ password }}"
+        validate_certs: no
+        tenant: "{{ tenant_name }}"
+        ap: "{{ tenant_name }}_app"
+        epg: "{{ epg_name }}"
+        description: "{{ item.description }}"
+        bd: "{{ tenant_name }}_bd"
+        state: present
