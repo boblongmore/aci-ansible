@@ -1,0 +1,6 @@
+---
+
+- name: Delete a Tenant using a role
+  hosts: dcloud-fabric
+  roles:
+    - DeleteTN

@@ -7,5 +7,6 @@
     validate_certs: no
     state: present
     tenant: "{{ TN }}"
-    bd: "{{ BD }}"
+    bd: "{{ item }}"
     vrf: "{{ VRF }}"
+  loop: "{{ BD }}"

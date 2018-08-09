@@ -2,11 +2,12 @@
 
 - name: Create an EPG
   aci_epg:
-        hostname: "{{ apic }}"
-        password: "{{ pw }}"
-        validate_certs: no
-        tenant: "{{ TN }}"
-        ap: "{{ AP }}_app"
-        epg: "{{ EPG }}"
-        bd: "{{ BD }}"
-        state: present
+    hostname: "{{ apic }}"
+    password: "{{ pw }}"
+    validate_certs: no
+    tenant: "{{ TN }}"
+    ap: "{{ AP }}-app"
+    epg: "{{ item.EPG_Name }}"
+    bd: "{{ item.BD_Name }}"
+    state: present
+  loop: "{{ epg_data }}"

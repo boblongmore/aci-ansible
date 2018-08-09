@@ -6,5 +6,5 @@
     password: "{{ pw }}"
     validate_certs: no
     tenant: "{{ TN }}"
-    ap: "{{ AP }}_app"
+    ap: "{{ AP }}-app"
     state: present
