@@ -7,7 +7,9 @@
     validate_certs: no
     tenant: "{{ TN }}"
     ap: "{{ AP }}-app"
-    epg: "{{ item.EPG_Name }}"
-    bd: "{{ item.BD_Name }}"
+    epg: "{{ item.0 }}"
+    bd: "{{ item.1 }}"
     state: present
-  loop: "{{ epg_data }}"
+  with_together:
+    - "{{ EPG }}"
+    - "{{ BD }}"

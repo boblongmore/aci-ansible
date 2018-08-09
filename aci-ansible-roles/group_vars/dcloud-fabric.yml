@@ -4,11 +4,11 @@ TN: ansible-tenant-bob
 EPG: 
   - ansible-web
   - ansible-db
-VRF: ansible-bob
 BD: 
   - ansible-web-bd
   - ansible-db-bd
+VRF: ansible-bob
 AP: ansible-web
-epg_data: 
-  - { EPG_Name: "{{ EPG[0] }}", BD_Name: "{{ BD[0] }}" }
-  - { EPG_Name: "ansible-db", BD_Name: "ansible-db-bd" }
+#epg_data: 
+#  - { EPG_Name: "{{ EPG[0] }}", BD_Name: "{{ BD[0] }}" }
+#  - { EPG_Name: "ansible-db", BD_Name: "ansible-db-bd" }
