@@ -1,0 +1,15 @@
+---
+
+- name: Bind EPG to VMM Domain
+  aci_epg_to_domain:
+    host: "{{ apic }}"
+    password: "{{ pw }}"
+    validate_certs: no
+    tenant: "{{ TN }}"
+    ap: "{{ AP }}-app"
+    epg: "{{ item }}"
+    domain: "{{ VMM_Domain }}"
+    domain_type: vmm
+    vm_provider: vmware
+    state: present
+  loop: "{{ EPG }}"

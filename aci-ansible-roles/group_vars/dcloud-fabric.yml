@@ -9,6 +9,7 @@ BD:
   - ansible-db-bd
 VRF: ansible-bob
 AP: ansible-web
+VMM_Domain: ACI
 #epg_data: 
 #  - { EPG_Name: "{{ EPG[0] }}", BD_Name: "{{ BD[0] }}" }
 #  - { EPG_Name: "ansible-db", BD_Name: "ansible-db-bd" }
