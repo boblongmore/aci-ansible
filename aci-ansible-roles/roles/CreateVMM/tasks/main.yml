@@ -1,0 +1,12 @@
+---
+
+- name: Add a new VMM domain
+  aci_domain:
+    host: "{{ apic }}"
+    validate_certs: no
+    username: "{{ UN }}"
+    password: "{{ creds}}"
+    domain: "{{ VMM_Domain }}"
+    domain_type: vmm
+    vm_provider: vmware
+    state: present

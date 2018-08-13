@@ -3,7 +3,7 @@
 - name: Create VRF
   aci_vrf:
     host: "{{ apic }}"
-    password: "{{ pw }}"
+    password: "{{ creds }}"
     validate_certs: no
     vrf: "{{ VRF }}"
     tenant: "{{ TN }}"

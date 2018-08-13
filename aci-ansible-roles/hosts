@@ -1,7 +1,10 @@
 [lab-fabric:vars]
 ansible_connection=local
+apic=10.255.44.96
+UN=admin
 
 [lab-fabric]
+10.255.44.96
 
 [dcloud-fabric:vars]
 ansible_connection=local

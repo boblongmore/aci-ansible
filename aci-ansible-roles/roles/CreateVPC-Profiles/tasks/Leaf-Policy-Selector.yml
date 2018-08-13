@@ -1,0 +1,12 @@
+- name: adding a switch policy leaf profile selector associated Node Block range (w/o policy group)
+  aci_switch_leaf_selector:
+    host: "{{ apic }}"
+    validate_certs: no
+    username: "{{ UN }}"
+    password: "{{ creds }}"
+    leaf_profile: "{{ sw_name }}"
+    leaf: "{{ sw_name}}_Leaf_Selector"
+    leaf_node_blk: "{{ sw_name }}_node_block"
+    from: 101
+    to: 102
+    state: present

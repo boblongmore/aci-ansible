@@ -1,0 +1,16 @@
+---
+
+TN: ansible-tenant-bob
+EPG: 
+  - ansible-web
+  - ansible-db
+BD: 
+  - ansible-web-bd
+  - ansible-db-bd
+VRF: ansible-bob
+AP: ansible-web
+VMM_Domain: ACI
+
+# VPC Switch Creation
+sw_name: VPC-9K-SW-Profile
+if_selector: VPC_9K_if_selector

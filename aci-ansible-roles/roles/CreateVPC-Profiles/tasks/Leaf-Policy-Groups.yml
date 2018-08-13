@@ -1,0 +1,11 @@
+---
+
+- name: Associating an interface selector profile to a switch policy leaf profile
+  aci_interface_selector_to_switch_policy_leaf_profile:
+    host: "{{ apic }}"
+    validate_certs: no
+    username: "{{ UN }}"
+    password: "{{ creds }}"
+    leaf_profile: "{{ sw_name }}"
+    interface_selector: "{{ if_selector }}"
+    state: present

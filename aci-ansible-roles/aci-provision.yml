@@ -1,12 +1,16 @@
 ---
 
-- name: Create a Tenant using a role
-  hosts: dcloud-fabric
+- name: Configure ACI Using Ansible
+  hosts: lab-fabric
   roles:
-    - ConfigSnap
+    #- ConfigSnap
     - CreateTN
     - CreateVRF
     - CreateBD
     - CreateANP
     - CreateEPG
+    - CreateVMM-VLPool
+    - CreateVMM
     - CreateEPGBinding
+    - CreateVPC-Pair
+    - CreateVPC-Profiles

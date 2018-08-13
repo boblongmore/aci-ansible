@@ -3,7 +3,7 @@
 - name: Create a Snapshot
   aci_config_snapshot:
     host: "{{ apic }}"
-    password: "{{ pw }}"
+    password: "{{ creds }}"
     validate_certs: no
     state: present
     export_policy: Ansible-Config

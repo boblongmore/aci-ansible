@@ -1,0 +1,14 @@
+
+---
+
+- name: Add vPC Protection Group
+  aci_switch_policy_vpc_protection_group:
+    host: "{{ apic }}"
+    validate_certs: no
+    username: "{{ UN }}"
+    password: "{{ creds }}"
+    protection_group: leafPair-vpcGrp
+    protection_group_id: 900
+    switch_1_id: 101
+    switch_2_id: 102
+    state: present

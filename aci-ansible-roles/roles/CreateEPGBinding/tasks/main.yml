@@ -3,7 +3,7 @@
 - name: Bind EPG to VMM Domain
   aci_epg_to_domain:
     host: "{{ apic }}"
-    password: "{{ pw }}"
+    password: "{{ creds }}"
     validate_certs: no
     tenant: "{{ TN }}"
     ap: "{{ AP }}-app"

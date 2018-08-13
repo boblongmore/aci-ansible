@@ -1,0 +1,25 @@
+---
+
+- name: Add a new VLAN pool
+  aci_vlan_pool:
+    host: "{{ apic }}"
+    validate_certs: no
+    username: "{{ UN }}"
+    password: "{{ creds }}"
+    pool: "{{ TN }}_VMM_Pool"
+    pool_allocation_mode: dynamic
+    description: VMM VL Pool
+    state: present
+
+- name: Add a new VLAN encap block
+  aci_vlan_pool_encap_block:
+    host: "{{ apic }}"
+    validate_certs: no
+    username: "{{ UN }}"
+    password: "{{ creds }}"
+    pool: "{{ TN }}_VMM_Pool"
+    block_start: 101
+    block_end: 200
+    block_name: VL101-200
+    pool_allocation_mode: dynamic
+    state: present

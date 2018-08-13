@@ -3,7 +3,7 @@
 - name: Create an EPG
   aci_epg:
     hostname: "{{ apic }}"
-    password: "{{ pw }}"
+    password: "{{ creds }}"
     validate_certs: no
     tenant: "{{ TN }}"
     ap: "{{ AP }}-app"

@@ -1,0 +1,10 @@
+---
+
+- name: creating a Leaf Profile with description
+  aci_switch_policy_leaf_profile:
+    host: "{{ apic }}"
+    validate_certs: no
+    username: "{{ UN }}"
+    password: "{{ creds }}"
+    leaf_profile: "{{ sw_name }}"
+    state: present

@@ -3,7 +3,7 @@
 - name: Create Application Profile
   aci_ap:
     host: "{{ apic }}"
-    password: "{{ pw }}"
+    password: "{{ creds }}"
     validate_certs: no
     tenant: "{{ TN }}"
     ap: "{{ AP }}-app"

@@ -3,7 +3,7 @@
 - name: Delete Tenant "{{ TN }}"
   aci_tenant:
     host: "{{ apic }}"
-    password: "{{ pw }}"
+    password: "{{ creds }}"
     validate_certs: no
     tenant: "{{ TN }}"
     description: tenant created by ansible
