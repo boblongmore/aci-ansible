@@ -10,3 +10,17 @@
     bd: "{{ item }}"
     vrf: "{{ VRF }}"
   loop: "{{ BD }}"
+
+- name: Create a subnet
+  aci_bd_subnet:
+    host: "{{ apic }}"
+    password: "{{ creds }}"
+    validate_certs: no
+    tenant: "{{ TN }}"
+    bd: "{{ item.0 }}"
+    gateway: "{{ item.1 }}"
+    mask: 24
+    scope: private
+  with_together: 
+    - "{{ BD }}"
+    - "{{ SUBNET }}"

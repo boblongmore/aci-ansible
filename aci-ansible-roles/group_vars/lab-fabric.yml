@@ -1,12 +1,15 @@
 ---
 
-TN: ansible-tenant-bob
+TN: ansible-tenant-mortgagecadence
 EPG: 
   - ansible-web
   - ansible-db
 BD: 
   - ansible-web-bd
   - ansible-db-bd
+SUBNET:
+  - 10.1.1.1
+  - 10.2.1.1
 VRF: ansible-bob
 AP: ansible-web
 VMM_Domain: ACI
@@ -14,3 +17,10 @@ VMM_Domain: ACI
 # VPC Switch Creation
 sw_name: VPC-9K-SW-Profile
 if_selector: VPC_9K_if_selector
+
+# VMware Port Group
+aci_portgroup: ansible-tenant-bob|ansible-web-app|ansible-db
+vcenter_ip: 10.255.49.7
+vcenter_username: administrator@vsphere.local
+vcenter_password: WWTwwt1!
+vm_name: aci-vm-01

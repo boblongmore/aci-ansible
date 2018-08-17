@@ -1,0 +1,11 @@
+---
+
+- name: Query all domains
+  aci_domain:
+    host: "{{ apic }}"
+    username: admin
+    validate_certs: no
+    password: "{{ creds }}"
+    domain_type: vmm
+    vm_provider: vmware
+    state: query

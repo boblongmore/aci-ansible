@@ -4,13 +4,15 @@
   hosts: lab-fabric
   roles:
     #- ConfigSnap
-    - CreateTN
-    - CreateVRF
-    - CreateBD
-    - CreateANP
-    - CreateEPG
-    - CreateVMM-VLPool
-    - CreateVMM
-    - CreateEPGBinding
-    - CreateVPC-Pair
-    - CreateVPC-Profiles
+    #- CreateTN
+   #- CreateVRF
+   #- CreateBD
+   #- CreateANP
+   #- CreateEPG
+   #- CreateVMM-VLPool
+   #- CreateVMM
+   #- CreateEPGBinding
+   #- CreateVPC-Pair
+   #- CreateVPC-Profiles
+   #- QueryDomain
+   - VMW_PortGroup
