@@ -1,5 +1,8 @@
 ---
 
+- import_tasks: Create-IF-Profile.yml
 - import_tasks: Leaf-Profile.yml
+- import_tasks: IF-Policy-Group.yml
+- import_tasks: IF-Profile.yml
 - import_tasks: Leaf-Policy-Groups.yml
 - import_tasks: Leaf-Policy-Selector.yml

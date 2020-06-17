@@ -1,4 +1,4 @@
-- name: adding a switch policy leaf profile selector associated Node Block range (w/o policy group)
+- name: Adding Switch Profile
   aci_switch_leaf_selector:
     host: "{{ apic }}"
     validate_certs: no

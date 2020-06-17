@@ -1,18 +1,19 @@
 ---
 
 - name: Configure ACI Using Ansible
-  hosts: lab-fabric
+  hosts: dcloud-fabric
   roles:
     #- ConfigSnap
-    #- CreateTN
-   #- CreateVRF
-   #- CreateBD
-   #- CreateANP
-   #- CreateEPG
+   - CreateTN
+   - CreateVRF
+   - CreateBD
+   - CreateANP
+   - CreateEPG
    #- CreateVMM-VLPool
    #- CreateVMM
    #- CreateEPGBinding
    #- CreateVPC-Pair
    #- CreateVPC-Profiles
    #- QueryDomain
-   - VMW_PortGroup
+   #- VMW_PortGroup
+   - QueryVPC-Profile

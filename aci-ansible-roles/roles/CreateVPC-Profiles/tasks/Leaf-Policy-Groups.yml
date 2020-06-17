@@ -7,5 +7,5 @@
     username: "{{ UN }}"
     password: "{{ creds }}"
     leaf_profile: "{{ sw_name }}"
-    interface_selector: "{{ if_selector }}"
+    interface_selector: "{{ if_policy_group }}"
     state: present

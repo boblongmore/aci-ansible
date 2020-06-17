@@ -1,0 +1,9 @@
+- name: Add a new leaf_interface_profile
+  aci_interface_policy_leaf_profile:
+    host: "{{ apic }}"
+    username: "{{ UN }}"
+    password: "{{ creds }}"
+    validate_certs: no
+    leaf_interface_profile: "{{ leaf_int_profile }}"
+    description:  leafintprfname description
+    state: present

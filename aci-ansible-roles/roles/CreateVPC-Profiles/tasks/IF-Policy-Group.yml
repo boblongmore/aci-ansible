@@ -1,0 +1,15 @@
+---
+
+- name: Create a Virtual Port Channel (VPC) Interface Policy Group
+  aci_interface_policy_leaf_policy_group:
+    host: "{{ apic }}"
+    username: "{{ UN }}"
+    validate_certs: no
+    password: "{{ creds }}"
+    lag_type: node
+    aep: "{{ phys_aep }}"
+    policy_group: "{{ if_policy_group }}"
+    cdp_policy: "{{ cdp_policy }}"
+    link_level_policy: "{{ link_policy }}"
+    port_channel_policy: "{{ lacp_mode }}"
+    state: present

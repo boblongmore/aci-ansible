@@ -1,0 +1,6 @@
+---
+
+- name: Configure ACI Using Ansible
+  hosts: dcloud-fabric
+  roles:
+   - aci-graphviz

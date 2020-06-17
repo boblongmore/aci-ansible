@@ -9,6 +9,7 @@ UN=admin
 [dcloud-fabric:vars]
 ansible_connection=local
 apic=sandboxapicdc.cisco.com
+UN=admin
 
 [dcloud-fabric]
 sandboxapicdc.cisco.com

@@ -1,0 +1,11 @@
+---
+
+- name: Query Specific access_port_selector under given leaf_interface_profile
+  aci_access_port_to_interface_policy_leaf_profile:
+    host: "{{ apic }}"
+    username: "{{ UN }}"
+    password: "{{ creds }}"
+    validate_certs: no
+    leaf_interface_profile: VPC_9K_if_selector
+    access_port_selector: port6
+    state: query

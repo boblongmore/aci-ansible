@@ -1,0 +1,174 @@
+{
+    "changed": false, 
+    "current": [
+        {
+            "fvAp": {
+                "attributes": {
+                    "childAction": "", 
+                    "descr": "", 
+                    "dn": "uni/tn-ansible-tenant-bob/ap-Ans-AP", 
+                    "extMngdBy": "", 
+                    "lcOwn": "local", 
+                    "modTs": "2018-09-07T13:42:56.641+00:00", 
+                    "monPolDn": "uni/tn-common/monepg-default", 
+                    "name": "Ans-AP", 
+                    "nameAlias": "", 
+                    "ownerKey": "", 
+                    "ownerTag": "", 
+                    "prio": "unspecified", 
+                    "status": "", 
+                    "uid": "15374"
+                }, 
+                "children": [
+                    {
+                        "fvAEPg": {
+                            "attributes": {
+                                "childAction": "", 
+                                "configIssues": "", 
+                                "configSt": "applied", 
+                                "descr": "", 
+                                "extMngdBy": "", 
+                                "fwdCtrl": "", 
+                                "isAttrBasedEPg": "no", 
+                                "isSharedSrvMsiteEPg": "no", 
+                                "lcOwn": "local", 
+                                "matchT": "AtleastOne", 
+                                "modTs": "2018-09-07T13:43:49.669+00:00", 
+                                "monPolDn": "uni/tn-common/monepg-default", 
+                                "name": "Ans-DB", 
+                                "nameAlias": "", 
+                                "pcEnfPref": "unenforced", 
+                                "pcTag": "49153", 
+                                "prefGrMemb": "exclude", 
+                                "prio": "unspecified", 
+                                "rn": "epg-Ans-DB", 
+                                "scope": "2359296", 
+                                "status": "", 
+                                "triggerSt": "triggerable", 
+                                "txId": "4035225266123979815", 
+                                "uid": "15374"
+                            }, 
+                            "children": [
+                                {
+                                    "fvRsBd": {
+                                        "attributes": {
+                                            "childAction": "", 
+                                            "extMngdBy": "", 
+                                            "forceResolve": "yes", 
+                                            "lcOwn": "local", 
+                                            "modTs": "2018-09-07T13:43:49.642+00:00", 
+                                            "monPolDn": "uni/tn-common/monepg-default", 
+                                            "rType": "mo", 
+                                            "rn": "rsbd", 
+                                            "state": "formed", 
+                                            "stateQual": "none", 
+                                            "status": "", 
+                                            "tCl": "fvBD", 
+                                            "tContextDn": "", 
+                                            "tDn": "uni/tn-ansible-tenant-bob/BD-ansible-db-bd", 
+                                            "tRn": "BD-ansible-db-bd", 
+                                            "tType": "name", 
+                                            "tnFvBDName": "ansible-db-bd", 
+                                            "uid": "0"
+                                        }, 
+                                        "children": [
+                                            {
+                                                "fvSubnetBDDefCont": {
+                                                    "attributes": {
+                                                        "bddefDn": "uni/bd-[uni/tn-ansible-tenant-bob/BD-ansible-db-bd]-isSvc-no", 
+                                                        "childAction": "deleteNonPresent", 
+                                                        "lcOwn": "local", 
+                                                        "modTs": "2018-09-07T13:43:49.642+00:00", 
+                                                        "monPolDn": "uni/tn-common/monepg-default", 
+                                                        "name": "", 
+                                                        "nameAlias": "", 
+                                                        "rn": "subnetBddefDn-[uni/bd-[uni/tn-ansible-tenant-bob/BD-ansible-db-bd]-isSvc-no]", 
+                                                        "status": ""
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }, 
+                    {
+                        "fvAEPg": {
+                            "attributes": {
+                                "childAction": "", 
+                                "configIssues": "", 
+                                "configSt": "applied", 
+                                "descr": "", 
+                                "extMngdBy": "", 
+                                "fwdCtrl": "", 
+                                "isAttrBasedEPg": "no", 
+                                "isSharedSrvMsiteEPg": "no", 
+                                "lcOwn": "local", 
+                                "matchT": "AtleastOne", 
+                                "modTs": "2018-09-07T13:43:29.230+00:00", 
+                                "monPolDn": "uni/tn-common/monepg-default", 
+                                "name": "Web-Prod", 
+                                "nameAlias": "", 
+                                "pcEnfPref": "unenforced", 
+                                "pcTag": "32773", 
+                                "prefGrMemb": "exclude", 
+                                "prio": "unspecified", 
+                                "rn": "epg-Web-Prod", 
+                                "scope": "2359296", 
+                                "status": "", 
+                                "triggerSt": "triggerable", 
+                                "txId": "4035225266123979792", 
+                                "uid": "15374"
+                            }, 
+                            "children": [
+                                {
+                                    "fvRsBd": {
+                                        "attributes": {
+                                            "childAction": "", 
+                                            "extMngdBy": "", 
+                                            "forceResolve": "yes", 
+                                            "lcOwn": "local", 
+                                            "modTs": "2018-09-07T13:43:29.206+00:00", 
+                                            "monPolDn": "uni/tn-common/monepg-default", 
+                                            "rType": "mo", 
+                                            "rn": "rsbd", 
+                                            "state": "formed", 
+                                            "stateQual": "none", 
+                                            "status": "", 
+                                            "tCl": "fvBD", 
+                                            "tContextDn": "", 
+                                            "tDn": "uni/tn-ansible-tenant-bob/BD-ansible-web-bd", 
+                                            "tRn": "BD-ansible-web-bd", 
+                                            "tType": "name", 
+                                            "tnFvBDName": "ansible-web-bd", 
+                                            "uid": "0"
+                                        }, 
+                                        "children": [
+                                            {
+                                                "fvSubnetBDDefCont": {
+                                                    "attributes": {
+                                                        "bddefDn": "uni/bd-[uni/tn-ansible-tenant-bob/BD-ansible-web-bd]-isSvc-no", 
+                                                        "childAction": "deleteNonPresent", 
+                                                        "lcOwn": "local", 
+                                                        "modTs": "2018-09-07T13:43:29.206+00:00", 
+                                                        "monPolDn": "uni/tn-common/monepg-default", 
+                                                        "name": "", 
+                                                        "nameAlias": "", 
+                                                        "rn": "subnetBddefDn-[uni/bd-[uni/tn-ansible-tenant-bob/BD-ansible-web-bd]-isSvc-no]", 
+                                                        "status": ""
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ], 
+    "failed": false
+}

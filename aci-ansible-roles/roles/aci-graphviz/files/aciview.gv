@@ -1,0 +1,11 @@
+// ACI View
+digraph {
+	subgraph cluster0 {
+		node [color=white style=filled]
+		style=filled
+		color=lightgrey
+		label="Ans-AP"
+		"Ans-DB" -> "ansible-db-bd"
+		"Web-Prod" -> "ansible-web-bd"
+	}
+}

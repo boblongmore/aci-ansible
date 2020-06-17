@@ -1,0 +1,41 @@
+---
+
+#- name: Query all provider contract to EPG bindings
+#  aci_epg_to_contract:
+#    host: "{{ apic }}"
+#    username: "{{ UN }}"
+#    password: "{{ creds }}"
+#    validate_certs: no
+#    tenant: ansible-tenant-bob
+#    contract_type: provider
+#    state: query
+
+#- name: Query a specific contract to EPG binding
+#  aci_epg_to_contract:
+#    host: "{{ apic }}"
+#    username: "{{ UN }}"
+#    password: "{{ creds }}"
+#    validate_certs: no
+#    tenant: ansible-tenant-bob
+#    ap: Ans-AP
+#    epg: Ans-DB
+#    contract: ansCx
+#    contract_type: provider
+#    state: query
+
+- name: Query all EPGs of an App Profile
+  aci_epg:
+    host: "{{ apic }}"
+    username: "{{ UN }}"
+    password: "{{ creds }}"
+    validate_certs: no
+    ap: Ans-AP
+    state: query
+  register: results
+
+- name: print results
+  debug:
+    msg: "{{ results }}"
+
+- name: write results
+  local_action: copy content={{ results | to_nice_json }} dest=/Github/aci-ansible/aci-ansible-roles/roles/aci-graphviz/files/ACI-RESULTS.json

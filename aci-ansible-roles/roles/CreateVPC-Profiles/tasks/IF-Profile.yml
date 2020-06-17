@@ -1,0 +1,19 @@
+---
+
+- name: Associate an Interface Access Port Selector to an Interface Policy Leaf Profile with a Policy Group
+  aci_access_port_to_interface_policy_leaf_profile:
+    host: "{{ apic }}"
+    username: "{{ UN }}"
+    password: "{{ creds }}"
+    validate_certs: no
+    leaf_interface_profile: "{{ leaf_int_profile }}"
+    access_port_selector: ansible-static
+    leaf_port_blk: "1/5"
+    from_port: 5
+    to_port: 5
+    policy_group: "{{ if_policy_group }}"
+    interface_type: vpc
+    state: present
+  #with_together: 
+  #  - "{{ if_port_name }}"
+  #  - "{{ if_port_blk }}"
